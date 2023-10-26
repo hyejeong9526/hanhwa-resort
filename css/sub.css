@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** base **/
+html,
+body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    position: relative;
+    min-width: 1200px;
+    font-family: "Dotum", "Arial", sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+/** scrollBox **/
+.scrollBox {
+    min-width: 1200px;
+    height: 100%;
+    position: relative;
+}
+
+.scrollBox .wrap {
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    top:125px;
+}
+
+.scrollBox .wrap > div {
+    position: relative;
+
+}
+
+#header {
+    width: 100%;
+    height: 125px;
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#header .inner{
+    width: 1497px;
+    margin: 0 auto;
+    position: relative;
+}
+#header .inner h1{
+    position: absolute;
+    left: 0;
+    top:71px;
+}
+#header .inner .link{
+    vertical-align: bottom;
+    margin-bottom: 28px;
+    position: absolute;
+    top: 36px;
+    right:0;
+}
+#header .inner .link >li{
+    display: inline-block;
+    margin-right: 26px;
+    vertical-align: middle;
+}
+#header .inner .link >li:last-child{
+    margin-right: 0;
+}
+#header .inner .gnb{
+    margin-left: 509px;
+    position: absolute;
+    top:79px;
+    left:0;
+}
+#header .inner .gnb >li{
+    float: left;
+    margin-right: 66px;
+}
+#header .inner .gnb >li:last-child{
+    margin-right: 0;
+}
+
+#header .inner .gnb >li:nth-child(1){width: 79px; height: 47px; background: url("../img/common/header/gnb_01.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(2){width: 141px; height: 47px; background: url("../img/common/header/gnb_02.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(3){width: 111px; height: 47px; background: url("../img/common/header/gnb_03.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(4){width: 121px; height: 47px; background: url("../img/common/header/gnb_04.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(5){width: 108px; height: 47px; background: url("../img/common/header/gnb_05.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(6){width: 96px; height: 47px; background: url("../img/common/header/gnb_06.jpg") no-repeat left top;margin-right: 0;}
+
+
+#header .inner .gnb >li:nth-child(1):hover,#header .inner .gnb >li:nth-child(1).on{background: url("../img/common/header/gnb_01_on.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(2):hover,#header .inner .gnb >li:nth-child(2).on{background: url("../img/common/header/gnb_02_on.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(3):hover,#header .inner .gnb >li:nth-child(3).on{background: url("../img/common/header/gnb_03_on.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(4):hover,#header .inner .gnb >li:nth-child(4).on{background: url("../img/common/header/gnb_04_on.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(5):hover,#header .inner .gnb >li:nth-child(5).on{background: url("../img/common/header/gnb_05_on.jpg") no-repeat left top;}
+#header .inner .gnb >li:nth-child(6):hover,#header .inner .gnb >li:nth-child(6).on{background: url("../img/common/header/gnb_06_on.jpg") no-repeat left top;}
+
+#header .inner .gnb >li > a{display: block; width: 100%; height: 100%;}
+
+
+#header .megamenu{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 126px;
+    z-index: 300;
+    display: none;
+}
+#header .megamenu >li{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+#header .megamenu >li.on{opacity: 1;}
+
+
+
+
+
+
+/** sub1 **/
+#sub1 {
+    height: 3609px; /*이미지 길이 만큼으로 변경해줘요*/
+    background: url("../img/package.jpg") no-repeat center top; /*여기에 이미지만 바꿔주면 되요*/
+    position: relative;
+}
+
+
+
+
+
+
+/** sub2 **/
+#sub2 {
+    height: 4432px; /*이미지 길이 만큼으로 변경해줘요*/
+    background: url("../img/roomguide.jpg") no-repeat center top; /*여기에 이미지만 바꿔주면 되요*/
+    position: relative;
+}
+
+/** sub3 **/
+#sub3 {
+    height: 3303px; /*이미지 길이 만큼으로 변경해줘요*/
+    background: url("../img/roomlist.jpg") no-repeat center top; /*여기에 이미지만 바꿔주면 되요*/
+    position: relative;
+}
+
+/** sub4 **/
+#sub4 {
+    height: 3410px; /*이미지 길이 만큼으로 변경해줘요*/
+    background: url("../img/resorts_story.jpg") no-repeat center top; /*여기에 이미지만 바꿔주면 되요*/
+    position: relative;
+}
+
+/** sub5 **/
+#sub5 {
+    height: 4384px; /*이미지 길이 만큼으로 변경해줘요*/
+    background: url("../img/membership.jpg") no-repeat center top; /*여기에 이미지만 바꿔주면 되요*/
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
